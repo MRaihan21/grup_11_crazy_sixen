@@ -13,4 +13,11 @@
     <string name="buat_akun_baru">BUAT AKUN BARU</string>
     <string name="register">Buat Akun</string>
     <string name="sudah_punya_akun">Sudah Punya Akun? Masuk Sekarang</string>
+    <string name="berat_badan_kg">Berat Badan (kg)</string>
+    <string name="tinggi_badan_cm">Tinggi Badan (cm)</string>
+    <string name="selanjutnya">SELANJUTNYA</string>
+    <string name="pilih_umur_bayi_bulan">Pilih Umur Bayi (Bulan)</string>
+    <string name="range_berat_1_25_kg">*Range berat 1 - 25 kg</string>
+    <string name="range_tinggi_1_100_kg">*Range Tinggi 1 - 100 kg</string>
+    <string name="pilih_jenis_kelamin">Pilih Jenis Kelamin</string>
 </resources>

@@ -75,26 +75,28 @@
         android:gravity="center"
         >
 
-        <TextView
-            android:id="@+id/tv_text_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/regis"
-            android:layout_marginTop="30dp"
-            android:textSize="12sp"
-            android:textColor="@color/black"
-            />
 
         <Button
             android:id="@+id/btn_login"
             android:layout_width="206dp"
             android:layout_height="48dp"
-            android:layout_marginTop="15dp"
             android:backgroundTint="@color/secondaryColor"
             android:textColor="@color/white"
+            android:layout_marginTop="30dp"
             android:text="@string/login"
             android:textSize="16sp"
             />
+
+        <Button
+            android:id="@+id/btntv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regis"
+            android:textSize="12sp"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@color/black"
+            />
+
 
     </LinearLayout>
 
