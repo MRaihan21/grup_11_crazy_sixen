@@ -2,5 +2,15 @@
     <string name="app_name">My MPASI</string>
     <string name="mpasi">MPASI</string>
 
-    <string name="selamat_datang">Selamat Datang</string>
+    <string name="selamat_datang">SELAMAT DATANG</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="regis">Belum punya akun ? Daftar sekarang</string>
+    <string name="login">Masuk</string>
+    <string name="data_bayi">DATA BAYI</string>
+    <string name="konfirmasi_password">Konfirmasi Password</string>
+    <string name="username">Username</string>
+    <string name="buat_akun_baru">BUAT AKUN BARU</string>
+    <string name="register">Buat Akun</string>
+    <string name="sudah_punya_akun">Sudah Punya Akun? Masuk Sekarang</string>
 </resources>

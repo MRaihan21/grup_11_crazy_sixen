@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mainColor"
+    android:background="@color/primaryColor"
     tools:context=".SplashActivity">
 
     <ImageView
-        android:id="@+id/iv_logo"
+        android:id="@+id/iv_logo_ss"
         android:layout_width="450dp"
         android:layout_height="450dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/logo" />
+        android:src="@drawable/baby" />
 
 
 

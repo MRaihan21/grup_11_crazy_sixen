@@ -13,8 +13,18 @@
         android:theme="@style/Theme.MyMPASI"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
+            android:name=".DataBayiActivity"
             android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.MyMPASI" />
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -26,7 +36,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>
