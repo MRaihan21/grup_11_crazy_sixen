@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">My MPASI</string>
-    <string name="mpasi">MPASI</string>
+    <string name="status_bayi">Status Bayi</string>
 
     <string name="selamat_datang">SELAMAT DATANG</string>
     <string name="email">E-mail</string>
@@ -20,4 +20,11 @@
     <string name="range_berat_1_25_kg">*Range berat 1 - 25 kg</string>
     <string name="range_tinggi_1_100_kg">*Range Tinggi 1 - 100 kg</string>
     <string name="pilih_jenis_kelamin">Pilih Jenis Kelamin</string>
+    <string name="kebutuhan_nutrisi">Kebutuhan Nutrisi</string>
+    <string name="menu_13_24_bulan">.Menu 13 - 24 bulan</string>
+    <string name="menu_6_12_bulan">.Menu  06 - 12 bulan</string>
+    <string name="rekomendasi_menu">Rekomendasi Menu</string>
+    <string name="detail_bahan">30 g tahu putih potong dadu\n30 g wortel potong dadu\n30 g brokoli\n1 btang seledri \n1 batang daun bawang\n1 siung bawang putih\n1/5 sdt merica</string>
+    <string name="detail_cara">"Rebus kaldu ayam hingga mendidih,masukan sayuran (wortel dan brokoli)\nsangrai bawang putih dengan menggunakan sedikit minyak hingga berbau harum, masukkan dalam rebusan sayur\nmasukan tahu. beri sedikit merica dan garam. tunggu hingga 10 menit matikan api. sajikan bersama nasi merah dan nugget ayam "</string>
+    <string name="settings">Settings</string>
 </resources>

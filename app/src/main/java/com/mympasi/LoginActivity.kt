@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.btntvLogin.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
+            val intent = Intent(this, DataBayiActivity::class.java)
             startActivity(intent)
         }
     }

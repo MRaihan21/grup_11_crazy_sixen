@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PengaturanAcitivity"
+    android:background="@color/primaryColor">
+
+
+    <TextView
+        android:id="@+id/tv_settings"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/settings"
+        android:textColor="@color/secondaryColor"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+
+    <ImageView
+        android:id="@+id/iv_account"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/akun"
+        android:layout_below="@+id/tv_settings"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="150dp"
+        android:src="@drawable/edite"
+        android:layout_below="@+id/iv_account"
+        android:layout_marginStart="50dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_bantuan"
+        android:layout_width="375dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="300dp"
+        android:src="@drawable/bantuan"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_edit"
+        android:layout_marginStart="50dp"
+        />
+
+
+
+</RelativeLayout>

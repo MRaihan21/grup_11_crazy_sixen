@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailResepActivity"
+    android:background="@color/primaryColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_makananutama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Makanan Utama"
+            android:textColor="@color/secondaryColor"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/iv_nasi_merah"
+            android:layout_width="340dp"
+            android:layout_height="300dp"
+            android:src="@drawable/nasi_merah"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_makananutama"
+            />
+
+        <TextView
+            android:id="@+id/tv_resep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resep"
+            android:textColor="@color/secondaryColor"
+            android:textStyle="bold"
+            android:layout_below="@+id/iv_nasi_merah"
+            android:layout_margin="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_bahan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Bahan"
+            android:textSize="10sp"
+            android:textColor="@color/secondaryColor"
+            android:layout_marginStart="30dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv_resep"
+            />
+
+        <TextView
+            android:id="@+id/tv_detail_bahan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/secondaryColor"
+            android:text="@string/detail_bahan"
+            android:textSize="10sp"
+            android:layout_marginStart="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_bahan"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_cara"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Cara"
+            android:textSize="10sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/secondaryColor"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv_detail_bahan"
+            />
+
+        <TextView
+            android:id="@+id/tv_detail_cara"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/detail_cara"
+            android:textSize="10sp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/secondaryColor"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_cara"
+            />
+
+
+
+
+    </RelativeLayout>
+    
+
+</ScrollView>

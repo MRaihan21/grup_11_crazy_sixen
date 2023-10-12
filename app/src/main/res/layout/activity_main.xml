@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,12 +8,186 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_statusgizi"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/mpasi"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/status_bayi"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/iv_beratbadan"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/berat_badan"
+        android:layout_below="@+id/tv_statusgizi"
+        />
+
+    <ImageView
+        android:id="@+id/iv_tinggibadan"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/tv_statusgizi"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/iv_beratbadan"
+        android:src="@drawable/tinggi_bayi" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/gizi_bayi"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/iv_tinggibadan"
+        android:layout_below="@id/tv_statusgizi"
+        />
+
+    <TextView
+        android:id="@+id/tv_kebutuhannutrisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_beratbadan"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/kebutuhan_nutrisi"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_nutrisi1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/nutrisi1"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/tv_kebutuhannutrisi"
+       />
+
+    <ImageView
+        android:id="@+id/iv_nutrisi2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="80dp"
+        android:src="@drawable/nutrisi2"
+        android:layout_below="@id/tv_kebutuhannutrisi"
+        android:layout_toRightOf="@+id/iv_nutrisi1"
+        />
+
+    <TextView
+        android:id="@+id/tv_rekomendasimenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_nutrisi1"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:text="@string/rekomendasi_menu"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btn_menu612"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="120dp"
+        android:backgroundTint="@color/secondaryColor"
+        android:text="@string/menu_6_12_bulan"
+        android:textColor="@color/primaryColor"
+        android:layout_below="@+id/tv_rekomendasimenu"
+        android:layout_marginStart="30dp"
+        />
+
+    <Button
+        android:id="@+id/btn_menu1324"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="28dp"
+        android:backgroundTint="@color/secondaryColor"
+        android:text="@string/menu_13_24_bulan"
+        android:textColor="@color/primaryColor"
+        android:layout_below="@id/tv_rekomendasimenu"
+        android:layout_toRightOf="@id/btn_menu612"
+        />
+
+    <TextView
+        android:id="@+id/tv_costumemenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_menu612"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:text="Kostume Menu"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_costume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/secondaryColor"
+        android:text="Kostume"
+        android:textColor="@color/primaryColor"
+        android:layout_below="@id/tv_costumemenu"
+        />
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:text="Home"
+        android:textColor="@color/white"
+        android:layout_below="@id/btn_costume"
+        />
+
+    <Button
+        android:id="@+id/btn_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:text="News"
+        android:layout_toRightOf="@id/btn_home"
+        android:textColor="@color/white"
+        android:layout_below="@+id/btn_costume"
+        />
+
+    <Button
+        android:id="@+id/btn_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginStart="28dp"
+        android:text="Setting"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/btn_news"
+        android:layout_below="@id/btn_costume"
+        />
+
+
+</RelativeLayout>

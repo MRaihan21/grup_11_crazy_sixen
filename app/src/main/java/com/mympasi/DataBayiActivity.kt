@@ -15,6 +15,7 @@ class DataBayiActivity : AppCompatActivity() {
 
         binding = ActivityDataBayiBinding.inflate(layoutInflater)
         val view = binding.root
+        setContentView(view)
 
         binding.btnSlnjt.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
