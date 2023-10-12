@@ -11,6 +11,6 @@
         android:layout_width="450dp"
         android:layout_height="450dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/logoo" />
+        android:src="@drawable/baby" />
 
 </RelativeLayout>
