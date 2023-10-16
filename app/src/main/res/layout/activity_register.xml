@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:textSize="32sp"
         android:text="@string/buat_akun_baru"
-        android:textStyle="bold"
+        android:textStyle="normal"
         android:textColor="@color/secondaryColor"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="64dp"
@@ -45,10 +45,10 @@
             android:background="@color/secondaryColor"
             android:textColor="@color/primaryColor"
             android:padding="15dp"
-            android:text="@string/username"
             android:hint="@string/username"
+            android:textColorHint="@color/primaryColor"
             android:textSize="12sp"
-            android:textStyle="bold" />
+            android:textStyle="normal" />
 
         <EditText
             android:id="@+id/edt_email_regis"
@@ -58,10 +58,10 @@
             android:background="@color/secondaryColor"
             android:textColor="@color/primaryColor"
             android:padding="15dp"
-            android:text="@string/email"
             android:hint="@string/email"
+            android:textColorHint="@color/primaryColor"
             android:textSize="12sp"
-            android:textStyle="bold" />
+            android:textStyle="normal" />
 
         <EditText
             android:id="@+id/edt_password_regis"
@@ -71,10 +71,10 @@
             android:background="@color/secondaryColor"
             android:textColor="@color/primaryColor"
             android:padding="15dp"
-            android:text="@string/password"
             android:hint="@string/password"
+            android:textColorHint="@color/primaryColor"
             android:textSize="12sp"
-            android:textStyle="bold" />
+            android:textStyle="normal" />
 
         <EditText
             android:id="@+id/edt_confirm_regis"
@@ -84,10 +84,10 @@
             android:background="@color/secondaryColor"
             android:textColor="@color/primaryColor"
             android:padding="15dp"
-            android:text="@string/konfirmasi_password"
             android:hint="@string/konfirmasi_password"
+            android:textColorHint="@color/primaryColor"
             android:textSize="12sp"
-            android:textStyle="bold" />
+            android:textStyle="normal" />
 
 
     </LinearLayout>

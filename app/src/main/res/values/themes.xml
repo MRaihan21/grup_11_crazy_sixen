@@ -3,7 +3,22 @@
     <style name="Base.Theme.MyMPASI" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
          <item name="colorPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/primaryColor</item>
     </style>
 
     <style name="Theme.MyMPASI" parent="Base.Theme.MyMPASI" />
+
+    <style name="judul">
+        <item name="android:textColor">@color/secondaryColor</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="editTextName">
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textSize">12sp</item>
+        <item name="textInputStyle">@id/normal</item>
+        <item name="android:textColorHint">@color/primaryColor</item>
+    </style>
+    
 </resources>

@@ -18,8 +18,33 @@ class DataBayiActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.btnSlnjt.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
-            startActivity(intent)
+
+            val beratBadan = binding.edtBeratbadan.text.toString().trim()
+            val tinggiBadan = binding.edtTinggibadan.text.toString().trim()
+            val pilihUmur = binding.edtPilihumurbayi.text.toString().trim()
+            val jenisKelamin = binding.edtJeniskelamin.text.toString().trim()
+
+
+            if (beratBadan.isEmpty() || tinggiBadan.isEmpty() || pilihUmur.isEmpty() || jenisKelamin.isEmpty()) {
+
+                if (beratBadan.isEmpty()) {
+                    binding.edtBeratbadan.error = "Isi Semua Data"
+                }
+                if (tinggiBadan.isEmpty()) {
+                    binding.edtTinggibadan.error = "Isi Semua Data"
+                }
+                if (pilihUmur.isEmpty()) {
+                    binding.edtPilihumurbayi.error = "Isi Semua Data"
+                }
+                if (jenisKelamin.isEmpty()) {
+                    binding.edtJeniskelamin.error = "Isi Semua Data"
+                }
+            } else {
+                    val intent = Intent(this, RegisterActivity::class.java)
+                    startActivity(intent)
+                }
+
+
         }
 
 

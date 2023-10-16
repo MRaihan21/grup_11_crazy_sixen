@@ -5,6 +5,23 @@
          <item name="colorPrimary">@color/black</item>
     </style>
 
+    <style name="judul">
+
+        <item name="android:textColor">@color/secondaryColor</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="editTextName">
+
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textSize">12sp</item>
+        <item name="textInputStyle">@id/normal</item>
+        <item name="android:textColorHint">@color/primaryColor</item>
+
+    </style>
+
 
 
 </resources>

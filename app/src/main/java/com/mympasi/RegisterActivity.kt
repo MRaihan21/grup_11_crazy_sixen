@@ -18,8 +18,32 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.btnRegis.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+
+            val userName = binding.edtUsernameRegis.text.toString().trim()
+            val email = binding.edtEmailRegis.text.toString().trim()
+            val password = binding.edtPasswordRegis.text.toString().trim()
+            val confirmPass = binding.edtConfirmRegis.text.toString().trim()
+
+            if (userName.isEmpty() || email.isEmpty() || password.isEmpty() || confirmPass.isEmpty()) {
+                if (userName.isEmpty()){
+                    binding.edtUsernameRegis.error = "Isi semua data"
+                }
+                if (email.isEmpty()){
+                    binding.edtEmailRegis.error = "Isi semua data"
+                }
+                if (password.isEmpty()){
+                    binding.edtPasswordRegis.error = "Isi semua data"
+                }
+                if (confirmPass.isEmpty()){
+                    binding.edtConfirmRegis.error = "Isi semua data"
+                }
+
+            } else {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
+
+
         }
 
 

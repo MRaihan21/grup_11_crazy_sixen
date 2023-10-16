@@ -7,7 +7,8 @@ import com.mympasi.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivityLoginBinding
+    private lateinit var binding: ActivityLoginBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,8 +20,20 @@ class LoginActivity : AppCompatActivity() {
 
         binding.btnLogin.setOnClickListener {
 
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            val userName = binding.edtEmailLogin.text.toString().trim()
+            val password = binding.edtPasswordLogin.text.toString().trim()
+
+            if (userName.isEmpty() || password.isEmpty()) {
+                if (userName.isEmpty()) {
+                    binding.edtEmailLogin.error = "Isi Semua Data"
+                }
+                if (password.isEmpty()) {
+                    binding.edtPasswordLogin.error = "Isi Semua Data"
+                }
+            } else {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
 
         }
 
