@@ -5,14 +5,14 @@
     <string name="selamat_datang">SELAMAT DATANG</string>
     <string name="email">E-mail</string>
     <string name="password">Password</string>
-    <string name="regis">Belum punya akun ? Daftar sekarang</string>
+    <string name="regis">Belum punya akun ?  </string>
     <string name="login">Masuk</string>
     <string name="data_bayi">DATA BAYI</string>
     <string name="konfirmasi_password">Konfirmasi Password</string>
     <string name="username">Username</string>
     <string name="buat_akun_baru">BUAT AKUN BARU</string>
     <string name="register">Buat Akun</string>
-    <string name="sudah_punya_akun">Sudah Punya Akun? Masuk Sekarang</string>
+    <string name="sudah_punya_akun">Sudah Punya Akun ? </string>
     <string name="berat_badan_kg">Berat Badan (kg)</string>
     <string name="tinggi_badan_cm">Tinggi Badan (cm)</string>
     <string name="selanjutnya">SELANJUTNYA</string>
@@ -21,10 +21,28 @@
     <string name="range_tinggi_1_100_kg">*Range Tinggi 1 - 100 kg</string>
     <string name="pilih_jenis_kelamin">Pilih Jenis Kelamin</string>
     <string name="kebutuhan_nutrisi">Kebutuhan Nutrisi</string>
-    <string name="menu_13_24_bulan">.Menu 13 - 24 bulan</string>
-    <string name="menu_6_12_bulan">.Menu  06 - 12 bulan</string>
+    <string name="menu_13_24_bulan">Menu\n13 - 24 \nbulan</string>
+    <string name="menu_6_12_bulan">Menu \n6 - 12 \nbulan</string>
     <string name="rekomendasi_menu">Rekomendasi Menu</string>
     <string name="detail_bahan">30 g tahu putih potong dadu\n30 g wortel potong dadu\n30 g brokoli\n1 btang seledri \n1 batang daun bawang\n1 siung bawang putih\n1/5 sdt merica</string>
     <string name="detail_cara">"Rebus kaldu ayam hingga mendidih,masukan sayuran (wortel dan brokoli)\nsangrai bawang putih dengan menggunakan sedikit minyak hingga berbau harum, masukkan dalam rebusan sayur\nmasukan tahu. beri sedikit merica dan garam. tunggu hingga 10 menit matikan api. sajikan bersama nasi merah dan nugget ayam "</string>
     <string name="settings">Settings</string>
+    <string name="image_baby">image baby</string>
+    <string name="daftar_sekarang">  Daftar sekarang</string>
+    <string name="masuk_sekarang">  Masuk Sekarang</string>
+    <string name="berat_badan_bayi">Berat badan \nbayi kurang \nBB/U</string>
+    <string name="tinggi_badan_bayi">Tinggi bayi \n  kurang \nPB/U</string>
+    <string name="gizi_bayi">Gizi bayi \nburuk \nBB/PB</string>
+    <string name="menu_6_12">Menu 6 - 12 Bulan</string>
+    <string name="makanan_utama">Makanan Utama</string>
+    <string name="makanan_selingan">Makanan Selingan</string>
+    <string name="menu_12_24">Menu 12 - 24</string>
+    <string name="lauk_hewani">Lauk Hewani</string>
+    <string name="lauk_nabati">Lauk Nabati</string>
+    <string name="hidagangan_sayur">Hidagangan Sayur</string>
+    <string name="selingan">Selingan</string>
+    <string name="buah">Buah</string>
+    <string name="makanan_pokok">Makanan Pokok</string>
+
+
 </resources>

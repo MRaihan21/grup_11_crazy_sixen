@@ -13,13 +13,19 @@
         android:theme="@style/Theme.MyMPASI"
         tools:targetApi="31">
         <activity
-            android:name=".MenuActivity"
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Menu612Activity"
             android:exported="false" />
         <activity
             android:name=".DetailResepActivity"
             android:exported="false" />
         <activity
-            android:name=".KostumActivity"
+            android:name=".Menu1324Activity"
             android:exported="false" />
         <activity
             android:name=".PengaturanAcitivity"

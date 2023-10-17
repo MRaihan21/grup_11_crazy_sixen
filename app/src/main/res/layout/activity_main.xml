@@ -1,193 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryColor"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tv_statusgizi"
-        android:textColor="@color/white"
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_statusbayi"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/status_bayi"
-        android:textSize="16dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp"
-        android:textStyle="bold"
-        />
-
-    <ImageView
-        android:id="@+id/iv_beratbadan"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_margin="10dp"
-        android:src="@drawable/berat_badan"
-        android:layout_below="@+id/tv_statusgizi"
-        />
-
-    <ImageView
-        android:id="@+id/iv_tinggibadan"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_below="@id/tv_statusgizi"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_toRightOf="@+id/iv_beratbadan"
-        android:src="@drawable/tinggi_bayi" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:src="@drawable/gizi_bayi"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_toRightOf="@+id/iv_tinggibadan"
-        android:layout_below="@id/tv_statusgizi"
-        />
-
-    <TextView
-        android:id="@+id/tv_kebutuhannutrisi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/iv_beratbadan"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="10dp"
-        android:text="@string/kebutuhan_nutrisi"
-        android:textColor="@color/white"
-        android:textSize="16dp"
-        android:textStyle="bold" />
-
-    <ImageView
-        android:id="@+id/iv_nutrisi1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/nutrisi1"
+        android:layout_marginTop="40dp"
         android:layout_marginStart="30dp"
-        android:layout_below="@id/tv_kebutuhannutrisi"
-       />
+        android:layout_marginBottom="30dp"
+        style="@style/titleMain"/>
 
-    <ImageView
-        android:id="@+id/iv_nutrisi2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="80dp"
-        android:src="@drawable/nutrisi2"
-        android:layout_below="@id/tv_kebutuhannutrisi"
-        android:layout_toRightOf="@+id/iv_nutrisi1"
-        />
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_statusbayi"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/iv_beratbadan"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/beratbayi" />
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:text="@string/berat_badan_bayi"
+            style="@style/textIcon"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_1"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_tinggibadan"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/tinggibayi" />
+
+        <TextView
+            android:id="@+id/tv_tinggibadan"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:text="@string/tinggi_badan_bayi"
+            style="@style/textIcon"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_2"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_gizibayi"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/gizibayi" />
+
+        <TextView
+            android:id="@+id/tv_gizibayi"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:text="@string/gizi_bayi"
+            style="@style/textIcon"/>
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tv_rekomendasimenu"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/iv_nutrisi1"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
-        android:padding="20dp"
         android:text="@string/rekomendasi_menu"
-        android:textColor="@color/white"
-        android:textSize="16dp"
-        android:textStyle="bold" />
-
-
-    <Button
-        android:id="@+id/btn_menu612"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginRight="120dp"
-        android:backgroundTint="@color/secondaryColor"
-        android:text="@string/menu_6_12_bulan"
-        android:textColor="@color/primaryColor"
-        android:layout_below="@+id/tv_rekomendasimenu"
+        android:layout_below="@+id/ll_3"
+        android:layout_marginTop="40dp"
         android:layout_marginStart="30dp"
-        />
+        android:layout_marginBottom="30dp"
+        style="@style/titleMain"/>
 
-    <Button
-        android:id="@+id/btn_menu1324"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="28dp"
-        android:backgroundTint="@color/secondaryColor"
-        android:text="@string/menu_13_24_bulan"
-        android:textColor="@color/primaryColor"
-        android:layout_below="@id/tv_rekomendasimenu"
-        android:layout_toRightOf="@id/btn_menu612"
-        />
 
-    <TextView
-        android:id="@+id/tv_costumemenu"
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:id="@+id/ll_4"
+        android:layout_below="@+id/tv_rekomendasimenu"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_menu612"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/menu_612"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_6_12_bulan"
+            android:padding="30dp"
+            android:textColor="@color/primaryColor"
+            android:background="@drawable/button_shape"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            />
+
+        <TextView
+            android:id="@+id/menu1324"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_13_24_bulan"
+            android:padding="30dp"
+            android:textColor="@color/primaryColor"
+            android:background="@drawable/button_shape"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll_4"
         android:padding="20dp"
-        android:text="Kostume Menu"
-        android:textColor="@color/white"
-        android:textSize="16dp"
-        android:textStyle="bold" />
+        android:layout_marginTop="@android:dimen/notification_large_icon_height"
+        android:gravity="center|bottom"
+        android:background="@drawable/button_shape2"
+        >
 
-    <Button
-        android:id="@+id/btn_costume"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="4dp"
-        android:backgroundTint="@color/secondaryColor"
-        android:text="Kostume"
-        android:textColor="@color/primaryColor"
-        android:layout_below="@id/tv_costumemenu"
-        />
 
-    <Button
-        android:id="@+id/btn_home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/black"
-        android:text="Home"
-        android:textColor="@color/white"
-        android:layout_below="@id/btn_costume"
-        />
+        <ImageView
+            android:id="@+id/icon_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="70dp"
+            android:src="@drawable/home"/>
 
-    <Button
-        android:id="@+id/btn_news"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/black"
-        android:text="News"
-        android:layout_toRightOf="@id/btn_home"
-        android:textColor="@color/white"
-        android:layout_below="@+id/btn_costume"
-        />
+        <ImageView
+            android:id="@+id/icon_news"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="70dp"
+            android:src="@drawable/news"/>
 
-    <Button
-        android:id="@+id/btn_setting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/black"
-        android:layout_marginStart="28dp"
-        android:text="Setting"
-        android:textColor="@color/white"
-        android:layout_toRightOf="@id/btn_news"
-        android:layout_below="@id/btn_costume"
-        />
+        <ImageView
+            android:id="@+id/icon_setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/pengaturan"/>
+
+
+    </LinearLayout>
 
 
 </RelativeLayout>

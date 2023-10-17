@@ -1,24 +1,77 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<resources>
+
+
     <style name="Base.Theme.MyMPASI" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-         <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorSecondary">@color/white</item>
         <item name="android:windowBackground">@color/primaryColor</item>
+        <item name="fontFamily">@font/poppinsregular</item>
     </style>
 
     <style name="Theme.MyMPASI" parent="Base.Theme.MyMPASI" />
 
-    <style name="judul">
+
+
+    <style name="title">
         <item name="android:textColor">@color/secondaryColor</item>
         <item name="android:textSize">32sp</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">40dp</item>
     </style>
 
     <style name="editTextName">
         <item name="android:textColor">@color/primaryColor</item>
         <item name="android:textSize">12sp</item>
-        <item name="textInputStyle">@id/normal</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:radius">25dp</item>
+        <item name="background">@color/secondaryColor</item>
         <item name="android:textColorHint">@color/primaryColor</item>
     </style>
+
+    <style name="textClick">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="buttonText">
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="backgroundTint">@color/secondaryColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="titleMain">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textIcon">
+        <item name="android:textAlignment">center</item>
+        <item name="fontFamily">@font/poppinssemibold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
     
+    <style name="menuTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">40dp</item>
+    </style>
+
+    <style name="menuBUtton">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="backgroundTint">@color/secondaryColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="settingText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+
 </resources>

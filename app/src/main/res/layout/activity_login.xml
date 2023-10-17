@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/Base.Theme.MyMPASI"
     tools:context=".LoginActivity">
 
     <TextView
@@ -11,10 +10,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/selamat_datang"
-       style="@style/judul"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="115dp"
         android:layout_alignParentTop="true"
+        style="@style/title"
         />
 
     <ImageView
@@ -22,8 +20,10 @@
         android:layout_width="304dp"
         android:layout_height="223dp"
         android:layout_below="@+id/tv_welcome"
+        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/baby" />
+        android:src="@drawable/baby"
+        android:contentDescription="@string/image_baby" />
 
     <LinearLayout
         android:id="@+id/ll_login"
@@ -35,59 +35,67 @@
         >
 
         <EditText
-            android:id="@+id/edt_email_login"
+            android:id="@+id/edt_input_login"
             android:layout_width="234dp"
-            android:layout_height="42dp"
+            android:layout_height="50dp"
             android:hint="@string/email"
-            android:background="@color/secondaryColor"
-            style="@style/editTextName"
+            android:background="@drawable/button_shape"
             android:padding="15dp"
+            style="@style/editTextName"
+            android:autofillHints="emailAddress"
+            android:inputType="textEmailAddress"
             />
 
         <EditText
             android:id="@+id/edt_password_login"
             android:layout_width="234dp"
-            android:layout_height="42dp"
+            android:layout_height="50dp"
             android:hint="@string/password"
-            style="@style/editTextName"
-            android:background="@color/secondaryColor"
+            android:background="@drawable/button_shape"
             android:padding="15dp"
             android:layout_marginTop="25dp"
-            />
-
-    </LinearLayout>
+            style="@style/editTextName"
+            android:autofillHints="password"
+            android:inputType="textPassword" />
 
     <LinearLayout
         android:id="@+id/il_text_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ll_login"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:gravity="center"
+        android:layout_marginTop="20dp"
         >
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regis"
+            android:textColor="@color/secondaryColor"
+            android:layout_marginEnd="5dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_daftarsekarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/daftar_sekarang"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:textSize="12sp" />
+
+    </LinearLayout>
 
 
         <Button
             android:id="@+id/btn_login"
+            style="@style/buttonText"
             android:layout_width="206dp"
             android:layout_height="48dp"
-            android:backgroundTint="@color/secondaryColor"
-            android:textColor="@color/primaryColor"
-            android:layout_marginTop="30dp"
-            android:textStyle="bold"
+            android:layout_marginTop="20dp"
             android:text="@string/login"
-            android:textSize="16sp"
-            />
-
-        <Button
-            android:id="@+id/btntv_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/regis"
-            android:textSize="12sp"
-            android:backgroundTint="@color/primaryColor"
-            android:textColor="@color/secondaryColor"
-            />
+            tools:ignore="TextSizeCheck" />
 
 
     </LinearLayout>

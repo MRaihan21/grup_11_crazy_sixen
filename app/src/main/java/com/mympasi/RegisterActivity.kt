@@ -47,7 +47,7 @@ class RegisterActivity : AppCompatActivity() {
         }
 
 
-        binding.btntvTextLogin.setOnClickListener {
+        binding.tvMasuksekarang.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }

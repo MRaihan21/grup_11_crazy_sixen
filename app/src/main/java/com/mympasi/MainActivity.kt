@@ -19,23 +19,18 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.btnSetting.setOnClickListener {
+        binding.iconSetting.setOnClickListener {
             val intent = Intent(this, PengaturanAcitivity::class.java)
             startActivity(intent)
         }
 
-        binding.btnCostume.setOnClickListener {
-            val intent = Intent(this, KostumActivity::class.java)
+        binding.menu612.setOnClickListener {
+            val intent = Intent(this, Menu612Activity::class.java)
             startActivity(intent)
         }
 
-        binding.btnMenu612.setOnClickListener {
-            val intent = Intent(this, MenuActivity::class.java)
-            startActivity(intent)
-        }
-
-        binding.btnMenu1324.setOnClickListener {
-            val intent = Intent(this, MenuActivity::class.java)
+        binding.menu1324.setOnClickListener {
+            val intent = Intent(this, Menu1324Activity::class.java)
             startActivity(intent)
         }
 

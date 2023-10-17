@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    tools:context=".Menu612Activity">
+
+
+    <TextView
+        android:id="@+id/tv_menu_6_12"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:text="@string/menu_6_12"
+        style="@style/menuTitle"
+        tools:ignore="TextSizeCheck" />
+
+
+
+       <Button
+           android:id="@+id/btn_makananutama"
+           android:layout_width="270dp"
+           android:layout_height="65dp"
+           android:text="@string/makanan_utama"
+           android:layout_marginTop="40dp"
+           style="@style/menuBUtton"
+           />
+
+       <Button
+           android:id="@+id/btn_makananselingan"
+           android:layout_width="270dp"
+           android:layout_height="65dp"
+           android:text="@string/makanan_selingan"
+           style="@style/menuBUtton"
+           />
+
+   </LinearLayout>
+
+
+
