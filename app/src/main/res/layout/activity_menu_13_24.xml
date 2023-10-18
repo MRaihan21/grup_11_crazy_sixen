@@ -12,11 +12,11 @@
         style="@style/menuTitle"
         android:layout_width="170dp"
         android:layout_height="40dp"
-        android:text="@string/menu_12_24"
+        android:text="@string/menu_13_24"
         tools:ignore="TextSizeCheck" />
 
     <Button
-        android:id="@+id/makananpokok"
+        android:id="@+id/btn_makananpokok"
         android:layout_width="270dp"
         android:layout_height="65dp"
         android:layout_marginTop="40dp"

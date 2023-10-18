@@ -1,9 +1,8 @@
 package com.mympasi
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.mympasi.databinding.ActivityLoginBinding
+import androidx.appcompat.app.AppCompatActivity
 import com.mympasi.databinding.ActivityPengaturanAcitivityBinding
 
 class PengaturanAcitivity : AppCompatActivity() {
@@ -12,19 +11,20 @@ class PengaturanAcitivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pengaturan_acitivity)
-
         binding = ActivityPengaturanAcitivityBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
-        binding.btnKeluar.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
+        val username = intent.getStringExtra("USERNAME")
+        val email = intent.getStringExtra("EMAIL")
+
+        if (username != null && email != null) {
+            binding.tvUsername.text = "Username: $username"
+            binding.tvGmail.text = "Email: $email"
         }
 
-        binding.tvEditprofile.setOnClickListener {
-            val intent = Intent(this, EditProfileActivity::class.java)
+        binding.btnKeluar.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 
@@ -47,6 +47,5 @@ class PengaturanAcitivity : AppCompatActivity() {
             val intent = Intent(this, NewsActivity::class.java)
             startActivity(intent)
         }
-
     }
 }

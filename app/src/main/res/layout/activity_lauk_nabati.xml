@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DetailResepActivity"
     >
 
     <LinearLayout
@@ -14,12 +12,12 @@
         >
 
         <TextView
-            android:id="@+id/tv_makananutama"
+            android:id="@+id/tv_nama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            tools:text="Menu Pokok"
             android:textSize="20sp"
+            android:text="@string/puree_pisang_dan_kacang_hujau"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:textStyle="bold"/>
@@ -28,8 +26,9 @@
             android:id="@+id/img_item_photo"
             android:layout_width="340dp"
             android:layout_height="300dp"
-            android:src="@drawable/nasi_merah"
+            android:src="@drawable/pureepisang"
             android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
             android:layout_marginTop="30dp"/>
 
         <TextView
@@ -38,8 +37,8 @@
             android:layout_height="wrap_content"
             android:textColor="@color/primaryColor"
             android:background="@color/secondaryColor"
-            android:text="@string/info"
-            android:textSize="10sp"
+            android:text="@string/desc_purepisang"
+            android:textSize="11sp"
             android:padding="15dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
@@ -51,7 +50,7 @@
             android:id="@+id/tv_resep"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Resep"
+            android:text="@string/resep"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:layout_gravity="start"
@@ -62,8 +61,8 @@
             android:id="@+id/tv_bahan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bahan"
-            android:textSize="10sp"
+            android:text="@string/bahan"
+            android:textSize="11sp"
             android:textColor="@color/white"
             android:layout_marginStart="30dp"
             android:textStyle="bold"/>
@@ -73,8 +72,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:textSize="10sp"
-            tools:text="@string/info"
+            android:textSize="11sp"
+            android:text="@string/bahan_purepisang"
             android:layout_marginStart="30dp"
             android:textStyle="bold"
             android:layout_marginTop="5dp"/>
@@ -83,8 +82,8 @@
             android:id="@+id/tv_cara"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cara"
-            android:textSize="10sp"
+            android:text="@string/cara"
+            android:textSize="11sp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="10dp"
             android:textColor="@color/white"
@@ -94,8 +93,8 @@
             android:id="@+id/tv_detail_cara"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/detail_cara"
-            android:textSize="10sp"
+            android:text="@string/cara_purepisang"
+            android:textSize="11sp"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:layout_marginStart="30dp"

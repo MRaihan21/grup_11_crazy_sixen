@@ -30,7 +30,7 @@
 
 
     <string name="range_berat_1_25_kg">*Range berat 1 – 25 kg</string>
-    <string name="range_tinggi_1_100_kg">*Range Tinggi 1 – 100 kg</string>
+    <string name="range_tinggi_1_100_cm">*Range Tinggi 1 – 100 cm</string>
     <string name="_1_24_bulan">*1 – 24 Bulan</string>
     <string name="laki_laki_peerempuan">Laki Laki / Peerempuan</string>
 
@@ -51,7 +51,7 @@
     <string name="gizi_bayi">Gizi bayi \nburuk \nBB/PB</string>
 
     <string name="menu_6_12">Menu 6 – 12 Bulan</string>
-    <string name="menu_12_24">Menu 12 – 24</string>
+    <string name="menu_13_24">Menu 13 – 24</string>
 
     <string name="makanan_pokok">Makanan Pokok</string>
     <string name="makanan_utama">Makanan Utama</string>
@@ -73,6 +73,30 @@
     <string name="resep">Resep</string>
     <string name="cara">Cara</string>
     <string name="bahan">Bahan</string>
+
+    <string name="wortel">Wortel</string>
+    <string name="desc_wortel">Wortel Sayuran berwarna oranye ini mengandung serat, vitamin C, kalsium, dan zat besi. Wortel juga mengandung beta karoten yang bersifat antioksidan dan vitamin A yang mengandung kesehatan mata dan kulit, serta pertumbuhan dan ketahanan terhadap infeksi.</string>
+    <string name="bahan_wortel">- 350 gr wortel \n- Air Secukupnya</string>
+    <string name="cara_wortel">1. Kupas dan cuci wortel hingga bersih \n2. Potong wortel kecil–kecil \n3. Kukus wortel yang telah di potong dengan panci pengukus dengan air yang telah mendidih. Kukus hingga lunak, kurang lebih selama 15–20 menit. Cara lain, Mama bisa merebus wortel dengan memasukan wortel ke dalam air yang telah mendidih \n4. Tiriskan wortel yang telah lunak dan masukan ke dalam blender atau ffod processor, tambahkan sedikit air lalu proses hingga sangat halus. Banyaknya air yang ditambhakan dapat disesuaikan dengan kebtuhan bayi. \n5. Sajikan puree yang masih hangat dan sisanya bisa dibekukan dalam freezer.</string>
+    <string name="desc_dagingsapi">Daging Sapi.Kaya protein dan mengandung kalsium serta zat besi yang bermanfaat untuk mendukung tumbuh kembang bayi. Daging jenis sirlon banyak di rekomendasikan oleh dokter anak sebagai pilihan terbaik dalam menu MPASI.</string>
+    <string name="bahan_dagingsapi">- 600 gram dagimg sapi, potong-potong dengan ukuran 2,5 cm \n- 1/4 cangkir tepung serba guna \n- 1/2 ons tomat. potong dadu \n- 1 sdt lada hitam - 150-200 gram kentang kecil, belah menjadi dua \n- 250 gram kacang polong dan wortel , haluskan</string>
+    <string name="cara_dagingsapi">1. Campurkan daging sapi dan tepung \n2. Masukan ke dalam panci bersama dengan tomat,kentang, garam, merica dan 1/2 gelas air. \n3. Masak menggunakan api kecilhingga semua bahan matang dan lunak \n4. Campurkan kacang polong dan wortel, diamkan selama 5 menit \n5. Pindahkan daging dan sayuran yang sudah direbus bersama campurkan kacang polong dan wortel ke dalam food processor atau blender. \n6. Haluskan hingga mencapai konsistensi yang diinginkan</string>
+    <string name="puree_pisang_dan_kacang_hujau">Puree Pisang dan Kacang hujau</string>
+    <string name="desc_purepisang">Pisang cukup banyak dan penting guna mendukung kesehatan tubuh si Kecil. Apalagi buah pisang memiliki tekstur yang lembut dan rasa yang manis, sehingga sangat cocok dijadikan menu MPASI untuk bayi. Di samping itu, manfaat buah pisang ini tak terlepas dari kandungan nutrisi di dalamnya.</string>
+    <string name="bahan_purepisang">- 4 sdm kacang hijau - 1 buah pisang - ASI secukupnya - Air secukupnya untuk merebus kacang hijau</string>
+    <string name="cara_purepisang">1. Cuci kacang hijau dan rebus hingga matang \n2. Setelah hampir menjadi bubur dan air sudah meresap, tambahkan pisang \n3. Masak kedua bahan tersebut sampai menjadi bubur \n4. Tambahkan sedikit ASI, atur tingkat kekentalan \n5. Saring bubur menggunakan saringan \n6. Sajikan untuk MPASI si Kecil</string>
+    <string name="pure_labu">Pure Labu</string>
+    <string name="desc_purelabu">Beberapa jenis labu, termasuk labu kuning, dapat membantu meningkatkan berat badan karena kandungan kalori di dalamnya. Labu juga menyimpan serat, beta-karoten, dan vitamin A. Untuk bayi, labu bisa diolah menjadi pure atau ditambahkan ke bubur bayi bersama daging-dagingan.</string>
+    <string name="bahan_purelabu">- Labu kuning secukupnya \n- Air \n- Kayu manis</string>
+    <string name="cara_purelabu">1. Haluskan labu dengan blender. \n2. Jika labu sudah halus, masukkan ke dalam panci dan tambahkan sedikit air dan ¼ sdt kayu manis untuk menambah rasa. \n3. Panaskan sampai mendidih, angkat. \n4. Tunggu sampai tidak terlalu panas dan sup labu kuning siap disantap Si Kecil.</string>
+    <string name="roti_gandum_dan_alpokat">Roti gandum dan alpokat</string>
+    <string name="desc_roti">Bayi mengalami penurunan berat badan, maka roti gandum dan alpukat menjadi perpaduan yang tepat, Alpukat juga merupakan sumber vitamin esensial yang baik bagi bayi sebagai camilan bayi 1 tahun, roti gandum kaya serat dan membuat rasa kenyang lebih lama.</string>
+    <string name="bahanroti">- Roti Gandum \n- Alpukat</string>
+    <string name="cararoti">1. Haluskan Alpokat dengan blender. \n2. Jika alpokat sudah halus oles diatas roti gandum \n3. Beri sedikit hiasan (opsional). \n4. Sajikan!</string>
+    <string name="buah_pepaya">Buah Pepaya</string>
+    <string name="desc_pepaya">Buah Pepayan bukan hanya lezat untuk dinikmati, tetapi juga kaya akan manfaat kesehatan yang luar biasa. Dari meningkatkan sistem kekebalan tubuh hingga menjaga kesehatan kulit, pepaya telah terbukti menjadi pilihan yang ideal untuk memperkuat kualitas hidup kita.</string>
+    <string name="bahan_pepaya">- Pepaya</string>
+    <string name="cara_pepaya">1. Sumber Antioksidan yang kuat buah pepaya mengandung antioksidan seperti vitamin C, vitamin E, dan karotenoid, termasuk beta-karoten. \n2. Meningkatkan sistem kekebalan tubuh. Vitamin C yang terdapat dalam buah pepaya berperan penting dalam meningkatkan sistem kekebalan tubuh. \n3. Menjaga kesehatan pencernaa buah pepaya mengandung enzim papain, yang dapat membantu dalam pencernaan protein. \n4. Menjaga kesehatan mata buah pepaya mengandung nutrisi penting seperti mengandung nutrisi penting seperti vitamin A, lutein, dan zeaxanthin yang berperan dalam menjaga kesehatan mata.</string>
 
 
 </resources>
