@@ -19,8 +19,8 @@ class PengaturanAcitivity : AppCompatActivity() {
         val email = intent.getStringExtra("EMAIL")
 
         if (username != null && email != null) {
-            binding.tvUsername.text = "Username: $username"
-            binding.tvGmail.text = "Email: $email"
+            binding.tvUsername.text = "$username"
+            binding.tvGmail.text = "$email"
         }
 
         binding.btnKeluar.setOnClickListener {
