@@ -7,6 +7,17 @@
     android:padding="16dp"
     android:orientation="vertical"
     tools:context=".EditProfileActivity">
+
+
+    <TextView
+        android:id="@+id/tv_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_profile"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="start"/>
     
     <ImageView
         android:layout_width="160dp"
@@ -18,23 +29,27 @@
         />
     
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:hint="username"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:autofillHints="username"
         android:layout_marginStart="30dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:layout_marginTop="20dp"
-        android:hint="gmail"
+        android:hint="@string/email"
         android:layout_marginStart="30dp"
+        android:inputType="textEmailAddress"
         android:textColor="@color/white"
+        android:autofillHints="emailAddress"
         android:textColorHint="@color/white"
         />
 
@@ -45,10 +60,10 @@
         >
 
     <Button
-        android:id="@+id/btn_keluar"
+        android:id="@+id/btn_simpaneditprofile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Simpan"
+        android:text="@string/simpan"
         android:layout_gravity="center|bottom"
         android:layout_marginBottom="50dp"
         style="@style/buttonText"

@@ -1,5 +1,6 @@
 package com.mympasi
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.mympasi.databinding.ActivityMenu612Binding
@@ -15,10 +16,15 @@ class Menu612Activity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-//        binding.btnMakananutama.setOnClickListener {
-//            val intent = Intent(this, DetailResepActivity::class.java)
-//            startActivity(intent)
-//        }
+        binding.btnMakananutama.setOnClickListener {
+            val intent = Intent(this, MakananUtamaActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnMakananselingan.setOnClickListener {
+            val intent = Intent(this, MakananSelinganActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

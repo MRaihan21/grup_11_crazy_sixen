@@ -23,6 +23,7 @@
         <item name="android:textColor">@color/primaryColor</item>
         <item name="android:textSize">12sp</item>
         <item name="android:textStyle">normal</item>
+        <item name="android:padding">16dp</item>
         <item name="android:radius">25dp</item>
         <item name="background">@color/secondaryColor</item>
         <item name="android:textColorHint">@color/primaryColor</item>
@@ -65,6 +66,11 @@
         <item name="android:textColor">@color/primaryColor</item>
         <item name="backgroundTint">@color/secondaryColor</item>
         <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="settingText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
 

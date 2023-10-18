@@ -28,5 +28,25 @@ class PengaturanAcitivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.tvEditprofile.setOnClickListener {
+            val intent = Intent(this, EditProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.tvEditdatabayi.setOnClickListener {
+            val intent = Intent(this, EditDataBayiActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.iconHome.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.iconNews.setOnClickListener {
+            val intent = Intent(this, NewsActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

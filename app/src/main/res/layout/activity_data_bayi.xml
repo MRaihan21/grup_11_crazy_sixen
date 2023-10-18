@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".DataBayiActivity">
 
     <TextView
@@ -10,8 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/data_bayi"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
         style="@style/title"
         />
 
@@ -19,19 +19,25 @@
         android:id="@+id/iv_logo_db"
         android:layout_width="300dp"
         android:layout_height="138dp"
-        android:layout_below="@+id/tv_databayi"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:src="@drawable/baby"
         android:contentDescription="@string/image_baby" />
+
+    <LinearLayout
+        android:id="@+id/ll_databayi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
 
     <EditText
         android:id="@+id/edt_beratbadan"
         style="@style/editTextName"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/iv_logo_db"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:autofillHints="weight"
         android:background="@drawable/button_shape"
@@ -44,8 +50,6 @@
         android:id="@+id/tv_range1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edt_beratbadan"
-        android:layout_centerHorizontal="true"
         android:padding="5dp"
         android:text="@string/range_berat_1_25_kg"
         android:textColor="@color/white"
@@ -57,8 +61,6 @@
         style="@style/editTextName"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_range1"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:autofillHints="height"
         android:background="@drawable/button_shape"
@@ -67,12 +69,12 @@
         android:minHeight="48dp"
         android:padding="10dp" />
 
+
+
     <TextView
         android:id="@+id/tv_range2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edt_tinggibadan"
-        android:layout_centerInParent="true"
         android:padding="5dp"
         android:text="@string/range_tinggi_1_100_kg"
         android:textColor="@color/white"
@@ -83,12 +85,9 @@
         style="@style/editTextName"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_range2"
-        android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
         android:autofillHints="age"
         android:background="@drawable/button_shape"
         android:hint="@string/pilih_umur_bayi_bulan"
@@ -96,20 +95,40 @@
         android:minHeight="48dp"
         android:padding="10dp" />
 
+        <TextView
+            android:id="@+id/tv_umurbayi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/_1_24_bulan"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            />
+
     <EditText
         android:id="@+id/edt_jeniskelamin"
         style="@style/editTextName"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edt_pilihumurbayi"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
         android:autofillHints="gender"
         android:background="@drawable/button_shape"
         android:hint="@string/pilih_jenis_kelamin"
         android:inputType="textCapWords"
         android:minHeight="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tv_jeniskelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/laki_laki_peerempuan"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            />
 
 
     <Button
@@ -117,12 +136,11 @@
         style="@style/buttonText"
         android:layout_width="200dp"
         android:layout_height="48dp"
-        android:layout_below="@id/edt_jeniskelamin"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
         android:text="@string/selanjutnya"
         tools:ignore="TextSizeCheck" />
 
+    </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,79 +13,89 @@
         android:text="@string/status_bayi"
         android:layout_marginTop="40dp"
         android:layout_marginStart="30dp"
-        android:layout_marginBottom="30dp"
-        style="@style/titleMain"/>
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        style="@style/titleMain"
+        />
 
 
     <LinearLayout
-        android:id="@+id/ll_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_statusbayi"
-        android:gravity="center"
-        android:layout_marginBottom="20dp"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        >
 
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
-        <ImageView
-            android:id="@+id/iv_beratbadan"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:src="@drawable/beratbayi" />
+            <ImageView
+                android:id="@+id/iv_beratbadan"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/beratbayi" />
 
-        <TextView
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:text="@string/berat_badan_bayi"
-            style="@style/textIcon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/berat_badan_bayi"
+                style="@style/textIcon"/>
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/ll_2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ll_1"
-        android:gravity="center"
-        android:layout_marginBottom="20dp"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
-        <ImageView
-            android:id="@+id/iv_tinggibadan"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:src="@drawable/tinggibayi" />
+            <ImageView
+                android:id="@+id/iv_tinggibadan"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/tinggibayi" />
 
-        <TextView
-            android:id="@+id/tv_tinggibadan"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:text="@string/tinggi_badan_bayi"
-            style="@style/textIcon"/>
+            <TextView
+                android:id="@+id/tv_tinggibadan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tinggi_badan_bayi"
+                style="@style/textIcon"/>
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/ll_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ll_2"
-        android:gravity="center"
-        android:layout_marginBottom="20dp"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
-        <ImageView
-            android:id="@+id/iv_gizibayi"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:src="@drawable/gizibayi" />
+            <ImageView
+                android:id="@+id/iv_gizibayi"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/gizibayi" />
 
-        <TextView
-            android:id="@+id/tv_gizibayi"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:text="@string/gizi_bayi"
-            style="@style/textIcon"/>
+            <TextView
+                android:id="@+id/tv_gizibayi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gizi_bayi"
+                style="@style/textIcon"/>
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
@@ -93,21 +104,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/rekomendasi_menu"
-        android:layout_below="@+id/ll_3"
         android:layout_marginTop="40dp"
         android:layout_marginStart="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="60dp"
         style="@style/titleMain"/>
-
-
 
     <LinearLayout
         android:id="@+id/ll_4"
-        android:layout_below="@+id/tv_rekomendasimenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:layout_marginBottom="40dp"
+        android:gravity="center">
 
         <TextView
             android:id="@+id/menu_612"
@@ -115,15 +123,13 @@
             android:layout_height="wrap_content"
             android:text="@string/menu_6_12_bulan"
             android:padding="30dp"
+            android:textStyle="bold"
             android:textColor="@color/primaryColor"
-            android:background="@drawable/button_shape"
-            />
+            android:background="@drawable/button_shape"/>
 
         <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="60dp"
-            />
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"/>
 
         <TextView
             android:id="@+id/menu1324"
@@ -131,48 +137,39 @@
             android:layout_height="wrap_content"
             android:text="@string/menu_13_24_bulan"
             android:padding="30dp"
+            android:textStyle="bold"
             android:textColor="@color/primaryColor"
-            android:background="@drawable/button_shape"
-            />
-
+            android:background="@drawable/button_shape"/>
 
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:layout_below="@+id/ll_4"
         android:padding="20dp"
-        android:layout_marginTop="@android:dimen/notification_large_icon_height"
-        android:gravity="center|bottom"
-        android:background="@drawable/button_shape2"
-        >
-
+        android:gravity="center|bottom">
 
         <ImageView
             android:id="@+id/icon_home"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginEnd="70dp"
-            android:src="@drawable/home"/>
+            android:src="@drawable/homee"/>
 
         <ImageView
             android:id="@+id/icon_news"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginEnd="70dp"
-            android:src="@drawable/news"/>
+            android:src="@drawable/news2"/>
 
         <ImageView
             android:id="@+id/icon_setting"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/pengaturan"/>
-
+            android:src="@drawable/settingg2"/>
 
     </LinearLayout>
 
-
-</RelativeLayout>
+</LinearLayout>

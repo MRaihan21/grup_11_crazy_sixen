@@ -44,13 +44,14 @@ class RegisterActivity : AppCompatActivity() {
             }
 
 
+
         }
 
 
-        binding.tvMasuksekarang.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-        }
+//        binding.tvMasuksekarang.setOnClickListener {
+//            val intent = Intent(this, LoginActivity::class.java)
+//            startActivity(intent)
+//        }
 
     }
 }

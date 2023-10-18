@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MyMPASI"
         tools:targetApi="31">
         <activity
+            android:name=".MakananSelinganActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MakananUtamaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerviewDetailMenu"
+            android:exported="false" />
+        <activity
+            android:name=".EditDataBayiActivity"
+            android:exported="false" />
+        <activity
             android:name=".EditProfileActivity"
             android:exported="false" />
         <activity

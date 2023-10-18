@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
     <TextView
@@ -10,8 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/selamat_datang"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
         style="@style/title"
         />
 
@@ -19,19 +19,19 @@
         android:id="@+id/iv_logo_login"
         android:layout_width="304dp"
         android:layout_height="223dp"
-        android:layout_below="@+id/tv_welcome"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
         android:src="@drawable/baby"
-        android:contentDescription="@string/image_baby" />
+        android:contentDescription="@string/image_baby"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        />
 
     <LinearLayout
         android:id="@+id/ll_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/iv_logo_login"
         android:orientation="vertical"
         android:gravity="center"
+        android:layout_marginTop="20dp"
         >
 
         <EditText
@@ -40,7 +40,6 @@
             android:layout_height="50dp"
             android:hint="@string/email"
             android:background="@drawable/button_shape"
-            android:padding="15dp"
             style="@style/editTextName"
             android:autofillHints="emailAddress"
             android:inputType="textEmailAddress"
@@ -48,58 +47,56 @@
 
         <EditText
             android:id="@+id/edt_password_login"
+            style="@style/editTextName"
             android:layout_width="234dp"
             android:layout_height="50dp"
-            android:hint="@string/password"
-            android:background="@drawable/button_shape"
-            android:padding="15dp"
             android:layout_marginTop="25dp"
-            style="@style/editTextName"
             android:autofillHints="password"
+            android:background="@drawable/button_shape"
+            android:hint="@string/password"
             android:inputType="textPassword" />
 
-    <LinearLayout
-        android:id="@+id/il_text_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        >
-
-        <TextView
-            android:id="@+id/tv_login"
+        <LinearLayout
+            android:id="@+id/il_text_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/regis"
-            android:textColor="@color/secondaryColor"
-            android:layout_marginEnd="5dp"
-            android:textSize="12sp" />
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
 
-        <TextView
-            android:id="@+id/tv_daftarsekarang"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/daftar_sekarang"
-            android:textColor="@color/white"
-            android:clickable="true"
-            android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/belum_punya_akun"
+                android:textColor="@color/secondaryColor"
+                android:layout_marginEnd="5dp"
+                android:textSize="12sp" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tv_daftarsekarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/daftar_sekarang"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:focusable="true"
+                tools:ignore="TouchTargetSizeCheck"
+                />
 
+        </LinearLayout>
 
         <Button
             android:id="@+id/btn_login"
             style="@style/buttonText"
             android:layout_width="206dp"
             android:layout_height="48dp"
-            android:layout_marginTop="20dp"
             android:text="@string/login"
+            android:layout_marginTop="20dp"
             tools:ignore="TextSizeCheck" />
-
 
     </LinearLayout>
 
-
-
-</RelativeLayout>
+</LinearLayout>

@@ -19,10 +19,6 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.iconSetting.setOnClickListener {
-            val intent = Intent(this, PengaturanAcitivity::class.java)
-            startActivity(intent)
-        }
 
         binding.menu612.setOnClickListener {
             val intent = Intent(this, Menu612Activity::class.java)
@@ -31,6 +27,16 @@ class MainActivity : AppCompatActivity() {
 
         binding.menu1324.setOnClickListener {
             val intent = Intent(this, Menu1324Activity::class.java)
+            startActivity(intent)
+        }
+
+        binding.iconSetting.setOnClickListener {
+            val intent = Intent(this, PengaturanAcitivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.iconNews.setOnClickListener {
+            val intent = Intent(this, NewsActivity::class.java)
             startActivity(intent)
         }
 
