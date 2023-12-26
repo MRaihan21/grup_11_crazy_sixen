@@ -1,7 +1,7 @@
 # Comfies
 ![mockup1](https://github.com/MRaihan21/grup_11_crazy_sixen/assets/93025188/24fd3ffd-a48c-43e1-9913-d4251ec043b8)
 
-## What is XET
+## What is COMFIES
 Comfies merupakan aplikasi mobile (Android) yang dirancang untuk membantu orang tua dan pengasuh bayi dalam memilih, mempersiapkan, dan memberikan makanan pendamping ASI dengan benar dan sehat kepada bayi mereka. Aplikasi ini bertujuan untuk memberikan panduan yang tepat, informasi berguna.
 
 # Tampilan Frontend (UI)
