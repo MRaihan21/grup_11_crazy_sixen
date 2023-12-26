@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Comfies</string>
+
     <string name="image_baby">image baby</string>
 
     <string name="selamat_datang">SELAMAT DATANG</string>
@@ -32,7 +33,7 @@
     <string name="range_berat_1_25_kg">*Range berat 1 – 25 kg</string>
     <string name="range_tinggi_1_100_cm">*Range Tinggi 1 – 100 cm</string>
     <string name="_1_24_bulan">*1 – 24 Bulan</string>
-    <string name="laki_laki_peerempuan">Laki Laki / Peerempuan</string>
+    <string name="laki_laki_peerempuan">Laki Laki / Perempuan</string>
 
 
     <string name="status_bayi">Status Bayi</string>
@@ -74,14 +75,15 @@
     <string name="cara">Cara</string>
     <string name="bahan">Bahan</string>
 
+
     <string name="wortel">Wortel</string>
     <string name="desc_wortel">Wortel Sayuran berwarna oranye ini mengandung serat, vitamin C, kalsium, dan zat besi. Wortel juga mengandung beta karoten yang bersifat antioksidan dan vitamin A yang mengandung kesehatan mata dan kulit, serta pertumbuhan dan ketahanan terhadap infeksi.</string>
     <string name="bahan_wortel">- 350 gr wortel \n- Air Secukupnya</string>
     <string name="cara_wortel">1. Kupas dan cuci wortel hingga bersih \n2. Potong wortel kecil–kecil \n3. Kukus wortel yang telah di potong dengan panci pengukus dengan air yang telah mendidih. Kukus hingga lunak, kurang lebih selama 15–20 menit. Cara lain, Mama bisa merebus wortel dengan memasukan wortel ke dalam air yang telah mendidih \n4. Tiriskan wortel yang telah lunak dan masukan ke dalam blender atau ffod processor, tambahkan sedikit air lalu proses hingga sangat halus. Banyaknya air yang ditambhakan dapat disesuaikan dengan kebtuhan bayi. \n5. Sajikan puree yang masih hangat dan sisanya bisa dibekukan dalam freezer.</string>
-    <string name="desc_dagingsapi">Daging Sapi.Kaya protein dan mengandung kalsium serta zat besi yang bermanfaat untuk mendukung tumbuh kembang bayi. Daging jenis sirlon banyak di rekomendasikan oleh dokter anak sebagai pilihan terbaik dalam menu MPASI.</string>
-    <string name="bahan_dagingsapi">- 600 gram dagimg sapi, potong-potong dengan ukuran 2,5 cm \n- 1/4 cangkir tepung serba guna \n- 1/2 ons tomat. potong dadu \n- 1 sdt lada hitam - 150-200 gram kentang kecil, belah menjadi dua \n- 250 gram kacang polong dan wortel , haluskan</string>
-    <string name="cara_dagingsapi">1. Campurkan daging sapi dan tepung \n2. Masukan ke dalam panci bersama dengan tomat,kentang, garam, merica dan 1/2 gelas air. \n3. Masak menggunakan api kecilhingga semua bahan matang dan lunak \n4. Campurkan kacang polong dan wortel, diamkan selama 5 menit \n5. Pindahkan daging dan sayuran yang sudah direbus bersama campurkan kacang polong dan wortel ke dalam food processor atau blender. \n6. Haluskan hingga mencapai konsistensi yang diinginkan</string>
-    <string name="puree_pisang_dan_kacang_hujau">Puree Pisang dan Kacang hujau</string>
+    <string name="desc_dagingsapi">Daging Sapi.Kaya protein dan endungeoned kalsium serta zat besi yang bermanfaat untuk mendukung tumbuh kembang bayi. Daging jenis sirlon banyak di rekomendasikan oleh dokter anak sebagai pilihan terbaik dalam menu MPASI.</string>
+    <string name="bahan_dagingsapi">– 600 gram dagimg sapi, potong–potong dengan ukuran 2,5 cm \n– ¼ cangkir tepung serba guna \n– ½ ons tomat. potong dadu \n- 1 sdt lada hitam - 150-200 gram kentang kecil, belah menjadi dua \n- 250 gram kacang polong dan wortel , haluskan</string>
+    <string name="cara_dagingsapi">1. Campurkan daging sapi dan tepung \n2. Masukan ke dalam panci bersama dengan tomat,kentang, garam, merica dan ½ gelas air. \n3. Masak menggunakan api kecilhingga semua bahan matang dan lunak \n4. Campurkan kacang polong dan wortel, diamkan selama 5 menit \n5. Pindahkan daging dan sayuran yang sudah direbus bersama campurkan kacang polong dan wortel ke dalam food processor atau blender. \n6. Haluskan hingga mencapai konsistensi yang diinginkan</string>
+    <string name="puree_pisang_dan_kacang_hujau">Puree Pisang dan Hacklang hujau</string>
     <string name="desc_purepisang">Pisang cukup banyak dan penting guna mendukung kesehatan tubuh si Kecil. Apalagi buah pisang memiliki tekstur yang lembut dan rasa yang manis, sehingga sangat cocok dijadikan menu MPASI untuk bayi. Di samping itu, manfaat buah pisang ini tak terlepas dari kandungan nutrisi di dalamnya.</string>
     <string name="bahan_purepisang">- 4 sdm kacang hijau - 1 buah pisang - ASI secukupnya - Air secukupnya untuk merebus kacang hijau</string>
     <string name="cara_purepisang">1. Cuci kacang hijau dan rebus hingga matang \n2. Setelah hampir menjadi bubur dan air sudah meresap, tambahkan pisang \n3. Masak kedua bahan tersebut sampai menjadi bubur \n4. Tambahkan sedikit ASI, atur tingkat kekentalan \n5. Saring bubur menggunakan saringan \n6. Sajikan untuk MPASI si Kecil</string>
@@ -97,6 +99,70 @@
     <string name="desc_pepaya">Buah Pepayan bukan hanya lezat untuk dinikmati, tetapi juga kaya akan manfaat kesehatan yang luar biasa. Dari meningkatkan sistem kekebalan tubuh hingga menjaga kesehatan kulit, pepaya telah terbukti menjadi pilihan yang ideal untuk memperkuat kualitas hidup kita.</string>
     <string name="bahan_pepaya">- Pepaya</string>
     <string name="cara_pepaya">1. Sumber Antioksidan yang kuat buah pepaya mengandung antioksidan seperti vitamin C, vitamin E, dan karotenoid, termasuk beta-karoten. \n2. Meningkatkan sistem kekebalan tubuh. Vitamin C yang terdapat dalam buah pepaya berperan penting dalam meningkatkan sistem kekebalan tubuh. \n3. Menjaga kesehatan pencernaa buah pepaya mengandung enzim papain, yang dapat membantu dalam pencernaan protein. \n4. Menjaga kesehatan mata buah pepaya mengandung nutrisi penting seperti mengandung nutrisi penting seperti vitamin A, lutein, dan zeaxanthin yang berperan dalam menjaga kesehatan mata.</string>
+    <string name="title_activity_main2">MainActivity2</string>
+
+<!--    menu-->
+    <string name="title_home">Home</string>
+    <string name="title_news">News</string>
+    <string name="title_settings">Settings</string>
+
+
+<!--    menu mpasi-->
+    <string name="alpukat">Puree Alpukat Kembang Kol</string>
+    <string name="desc_alpukat">
+        Mencampur buah, nasi, dan sayur juga bisa Moms jadikan pilihan jadwal menu MPASI 6 bulan terbaik.
+    </string>
+    <string name="cara_alpukat">
+        Masak beras hingga matang dan menjadi nasi.
+Haluskan buah alpukat dengan garpu.Kukus kembang kol dan haluskan dengan garpu.
+Campur semua bahan di dalam wadah dan aduk dengan menggunakan garpu.
+Jika ingin konsistensi yang lebih lembut, dapat memasukkan semua bahan ke dalam blender.
+Siap disajikan!
+    </string>
+    <string name="bahan_alpukat">
+        1/2 cangkir beras
+1/2 buah alpukat
+1/3 kembang kol
+1 sdt minyak zaitun
+    </string>
+
+    <string name="ubi_jalar">Puree Alpukat dan Ubi Jalar</string>
+    <string name="desc_ubi_jalar">
+        Ubi jalar sangat tepat dikombinasikan dengan buah alpukat untuk membuat resep jadwal menu MPASI 6 bulan terbaik.
+    </string>
+    <string name="cara_ubi_jalar">
+        Pindahkan ubi jalar ke dalam wadah untuk dimasak bersama dengan air dan rebus selama 25 menit.
+Saring ubi jalar dari air dan biarkan dingin.Masukkan buah alpukat ke dalam blender dan tambahkan secangkir air.
+Tambahkan ubi jalar rebus ke dalam blender berisi buah alpukat, lalu haluskan.
+Tuangkan lebih banyak air jika diperlukan, hingga mendapatkan konsistensi puree yang diinginkan.
+    </string>
+    <string name="bahan_ubi_jalar">
+        2 cangkir ubi jalar, potong dadu
+1 buah alpukat
+4 gelas air
+    </string>
+
+    <string name="sup_labu">Sup Labu</string>
+    <string name="desc_sup_labu">
+        Labu berwarna kuning memang kaya akan gizi untuk Si Kecil yaitu vitamin A, C, E dan mineral.
+
+Selain itu, bermanfaat juga untuk menambah sistem kekebalan tubuh bayi.
+
+Teksturnya yang lembut membuat labu ini sangat cocok sebagai resep jadwal menu MPASI 6 bulan pertama terbaik.
+
+Hindari penggunaan perasa seperti garam, gula pasir apalagi MSG.
+    </string>
+    <string name="cara_sup_labu">
+        Haluskan labu dengan blender.
+Jika labu sudah halus, masukkan ke dalam panci dan tambahkan sedikit air dan ¼ sdt kayu manis untuk menambah rasa.
+Panaskan sampai mendidih, angkat.Tunggu sampai tidak terlalu panas dan sup labu kuning siap disantap Si Kecil.
+    </string>
+    <string name="bahan_sup_labu">
+        Labu kuning secukupnya
+Air
+Kayu manis
+    </string>
+
 
 
 </resources>

@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DataBayiActivity">
+    tools:context=".Activity.Login.DataBayiActivity">
 
     <TextView
         android:id="@+id/tv_databayi"
+        style="@style/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/data_bayi"
         android:layout_gravity="center_horizontal"
-        style="@style/title"
-        />
+        android:text="@string/data_bayi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/iv_logo_db"
-        android:layout_width="300dp"
-        android:layout_height="138dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/image_baby"
         android:src="@drawable/baby"
-        android:contentDescription="@string/image_baby" />
-
-    <LinearLayout
-        android:id="@+id/ll_databayi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        >
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/edt_beratbadan"
         style="@style/editTextName"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="172dp"
         android:autofillHints="weight"
         android:background="@drawable/button_shape"
         android:hint="@string/berat_badan_kg"
         android:inputType="number"
         android:minHeight="48dp"
-        android:padding="10dp" />
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_databayi" />
 
     <TextView
         android:id="@+id/tv_range1"
@@ -54,21 +54,24 @@
         android:text="@string/range_berat_1_25_kg"
         android:textColor="@color/white"
         android:textSize="11sp"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_beratbadan" />
 
     <EditText
         android:id="@+id/edt_tinggibadan"
         style="@style/editTextName"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:autofillHints="height"
         android:background="@drawable/button_shape"
         android:hint="@string/tinggi_badan_cm"
         android:inputType="number"
         android:minHeight="48dp"
-        android:padding="10dp" />
-
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_range1" />
 
 
     <TextView
@@ -78,32 +81,37 @@
         android:padding="5dp"
         android:text="@string/range_tinggi_1_100_cm"
         android:textColor="@color/white"
-        android:textSize="11sp" />
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_tinggibadan" />
 
     <EditText
         android:id="@+id/edt_pilihumurbayi"
         style="@style/editTextName"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
         android:autofillHints="age"
         android:background="@drawable/button_shape"
         android:hint="@string/pilih_umur_bayi_bulan"
         android:inputType="number"
         android:minHeight="48dp"
-        android:padding="10dp" />
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_range2" />
 
-        <TextView
-            android:id="@+id/tv_umurbayi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:text="@string/_1_24_bulan"
-            android:textColor="@color/white"
-            android:textSize="11sp"
-            />
+    <TextView
+        android:id="@+id/tv_umurbayi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/_1_24_bulan"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_pilihumurbayi" />
 
     <EditText
         android:id="@+id/edt_jeniskelamin"
@@ -115,20 +123,22 @@
         android:hint="@string/pilih_jenis_kelamin"
         android:inputType="textCapWords"
         android:minHeight="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:padding="10dp" />
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_umurbayi" />
 
-        <TextView
-            android:id="@+id/tv_jeniskelamin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:text="@string/laki_laki_peerempuan"
-            android:textColor="@color/white"
-            android:textSize="11sp"
-            />
+    <TextView
+        android:id="@+id/tv_jeniskelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/laki_laki_peerempuan"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_jeniskelamin" />
 
 
     <Button
@@ -136,11 +146,13 @@
         style="@style/buttonText"
         android:layout_width="200dp"
         android:layout_height="48dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="12dp"
         android:text="@string/selanjutnya"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jeniskelamin"
         tools:ignore="TextSizeCheck" />
 
-    </LinearLayout>
 
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

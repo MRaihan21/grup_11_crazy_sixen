@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+<!--    status bayi-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="300dp"
+        android:layout_height="390dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_statusbayi"
+                style="@style/titleMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/status_bayi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="50dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_statusbayi" />
+
+
+            <!--            berat bayi-->
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_yellow"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view">
+
+                <ImageView
+                    android:id="@+id/iv_beratbadan"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/beratbayi"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.327"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view" />
+
+                <TextView
+                    android:id="@+id/tv_beratbadan"
+                    style="@style/textIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/berat_badan_bayi"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_beratbadan"
+                    app:layout_constraintStart_toEndOf="@+id/iv_beratbadan"
+                    app:layout_constraintTop_toTopOf="@+id/iv_beratbadan" />
+
+            </LinearLayout>
+
+
+            <!--            tinggi badan-->
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_yellow"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <ImageView
+                    android:id="@+id/iv_tinggibadan"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/tinggibayi"
+                    app:layout_constraintEnd_toEndOf="@+id/iv_beratbadan"
+                    app:layout_constraintStart_toStartOf="@+id/iv_beratbadan"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_beratbadan" />
+
+                <TextView
+                    android:id="@+id/tv_tinggibadan"
+                    style="@style/textIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tinggi_badan_bayi"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_tinggibadan"
+                    app:layout_constraintStart_toEndOf="@+id/iv_tinggibadan"
+                    app:layout_constraintTop_toTopOf="@+id/iv_tinggibadan" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_yellow"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <ImageView
+                    android:id="@+id/iv_gizibayi"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/gizibayi"
+                    app:layout_constraintEnd_toEndOf="@+id/iv_tinggibadan"
+                    app:layout_constraintStart_toStartOf="@+id/iv_tinggibadan"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_tinggibadan" />
+
+                <TextView
+                    android:id="@+id/tv_gizibayi"
+                    style="@style/textIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/gizi_bayi"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_gizibayi"
+                    app:layout_constraintStart_toEndOf="@+id/iv_gizibayi"
+                    app:layout_constraintTop_toTopOf="@+id/iv_gizibayi"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+<!--    rekomendasi menu-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/green"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_rekomendasimenu"
+                style="@style/titleMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/rekomendasi_menu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="50dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_rekomendasimenu" />
+
+            <TextView
+                android:id="@+id/tv_menu_6_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_yellow2"
+                android:padding="24dp"
+                android:text="Menu\n 06 - 12\n bulan"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_rekomendasimenu"
+                app:layout_constraintTop_toBottomOf="@+id/tv_rekomendasimenu" />
+
+            <TextView
+                android:id="@+id/tv_menu_13_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_yellow2"
+                android:padding="24dp"
+                android:text="Menu\n 13 - 24\n bulan"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_menu_6_12"
+                app:layout_constraintTop_toBottomOf="@+id/tv_rekomendasimenu" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

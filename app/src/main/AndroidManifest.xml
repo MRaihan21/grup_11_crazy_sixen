@@ -13,68 +13,62 @@
         android:theme="@style/Theme.MyMPASI"
         tools:targetApi="31">
         <activity
-            android:name=".DetailNewsActivity"
+            android:name=".ui.home.DetailMenuActivity"
             android:exported="false" />
         <activity
-            android:name=".BuahanActivity"
+            android:name=".ui.home.MenuTampilanActivity"
             android:exported="false" />
         <activity
-            android:name=".LaukNabatiActivity"
+            android:name=".ui.news.DetailNewsActivity"
             android:exported="false" />
         <activity
-            android:name=".LaukHewaniActivity"
+            android:name=".ui.home.menu.Menu_13_24.BuahanActivity"
             android:exported="false" />
         <activity
-            android:name=".MakananSelingan2Activity"
+            android:name=".ui.home.menu.Menu_13_24.LaukNabatiActivity"
             android:exported="false" />
         <activity
-            android:name=".HidanganSayurActivity"
+            android:name=".ui.home.menu.Menu_13_24.LaukHewaniActivity"
             android:exported="false" />
         <activity
-            android:name=".MakananPokokActivity"
+            android:name=".ui.home.menu.Menu_13_24.HidanganSayurActivity"
             android:exported="false" />
         <activity
-            android:name=".MakananSelinganActivity"
+            android:name=".ui.home.menu.Menu_13_24.MakananPokokActivity"
             android:exported="false" />
         <activity
-            android:name=".MakananUtamaActivity"
+            android:name=".ui.home.menu.Menu_6_12.MakananSelinganActivity"
             android:exported="false" />
         <activity
-            android:name=".DetailMakananPokokActivity"
+            android:name=".ui.home.menu.Menu_6_12.MakananUtamaActivity"
             android:exported="false" />
         <activity
-            android:name=".EditDataBayiActivity"
+            android:name=".ui.settings.EditDataBayiActivity"
             android:exported="false" />
         <activity
-            android:name=".EditProfileActivity"
+            android:name=".ui.settings.EditProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".NewsActivity"
+            android:name=".ui.home.Menu612Activity"
             android:exported="false" />
         <activity
-            android:name=".Menu612Activity"
+            android:name=".ui.home.Menu1324Activity"
             android:exported="false" />
         <activity
-            android:name=".DetailResepActivity"
+            android:name=".ui.settings.PengaturanAcitivity"
             android:exported="false" />
         <activity
-            android:name=".Menu1324Activity"
-            android:exported="false" />
-        <activity
-            android:name=".PengaturanAcitivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
+            android:name=".Activity.Login.LoginActivity"
             android:exported="true"
             android:theme="@style/Base.Theme.MyMPASI" />
         <activity
-            android:name=".DataBayiActivity"
+            android:name=".Activity.Login.DataBayiActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".Activity.Login.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".Activity.Login.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
